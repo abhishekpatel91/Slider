@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.frame {
+    position: relative;
+}
+
+.frame .slider-controls {
+    display: none;
+}
+
+.frame:hover .slider-controls {
+    display: block;
+}
+
+.frame .slider-controls button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    border: none;
+    font-size: 60px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.frame .slider-controls button:focus {
+    outline: none;
+}
+
+.frame .slider-controls .next-slide {
+    right: 0;
+}
+
+.frame .slider-controls .prev-slide {
+    left: 0;
+}
+
+.frame .slider-controls .disabled {
+    color: #666;
+    pointer-events: none;
+}
